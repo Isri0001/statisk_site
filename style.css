@@ -1,0 +1,39 @@
+/* Header */
+header{
+    display: flex;
+    justify-content: right;
+}
+
+nav a{
+    color: black;
+}
+
+/* H1 */
+.red{color: red;}
+
+/* grid box categories */
+.categories-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+/* categorie-box */
+.category-box{
+    background-color: grey;
+    color: white;
+    padding: 30px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+/* products */
+.products{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.product-card img{
+width: 100%;
+height: auto;
+}
