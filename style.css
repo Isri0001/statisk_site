@@ -27,13 +27,60 @@ nav a{
     text-decoration: none;
 }
 
-/* products */
-.products{
+
+.products {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-}
+    grid-template-rows: repeat(5, fr);
+  }
+  
+  .product-card {
+    display: grid;
+    grid-template-rows: subgrid;
+    grid-row: span 5;
+  }
+  
+  /* Billeder */
+  .product-card img {
+    width: 100%;
+    height: auto;
+  }
 
-.product-card img{
-width: 100%;
-height: auto;
-}
+  /* text color */
+  .grey{
+    color: lightslategray;
+  }
+  .products a{
+    color: black;
+  }
+
+  /* SALE RED */
+  .sale{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 20px;
+  }
+  .saleRed{
+    background-color: red;
+    
+  }
+
+
+  /* SOLD OUT IMG */
+  .sold-out_container img{
+    filter: opacity(50%)
+  }
+  .sold-out{
+    background-color: grey;
+    color: white;
+    padding: 30px;
+    position: absolute;
+    top: 8px;
+    left: 16px;
+
+  }
+  .sold-out_container{
+    position: relative;
+    text-align: center;
+  }
+
