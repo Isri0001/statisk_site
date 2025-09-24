@@ -9,7 +9,9 @@ nav a{
 }
 
 /* H1 */
-.red{color: red;}
+.red{color: red;
+display: inline-block;
+transform: scaleX(-1)translateX(-0.2rem);}
 
 /* grid box categories */
 .categories-grid{
@@ -83,4 +85,37 @@ nav a{
     position: relative;
     text-align: center;
   }
+
+/* PRODUCT PAGE */
+.breadcrumbs a{
+    color: black;
+}
+.info-right{
+    background-color: #d8d8d8;
+    color: white;
+    padding: 20px;
+    font-size: x-large;
+}
+
+
+.info-left{
+    font-size: x-large;
+}
+
+.product-info{
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.info-right, .info-left{
+    flex: 1;
+
+}
+
+.product-img{
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+}
 
