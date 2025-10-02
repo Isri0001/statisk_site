@@ -1,27 +1,27 @@
 /* Header */
-header{
+/* header{
     display: flex;
     justify-content: right;
 }
 
 nav a{
     color: black;
-}
+} */
 
 /* H1 */
-.red{color: red;
+/* .red{color: red;
 display: inline-block;
-transform: scaleX(-1)translateX(-0.2rem);}
+transform: scaleX(-1)translateX(-0.2rem);} */
 
 /* grid box categories */
-.categories-grid{
+/* .categories-grid{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 15px;
-}
+} */
 
 /* categorie-box */
-.category-box{
+/* .category-box{
     background-color: grey;
     color: white;
     padding: 30px;
@@ -33,31 +33,31 @@ transform: scaleX(-1)translateX(-0.2rem);}
 .products {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(5, fr);
+    grid-template-rows: repeat(5, 1fr);
   }
   
   .product-card {
     display: grid;
     grid-template-rows: subgrid;
     grid-row: span 5;
-  }
+  } */
   
   /* Billeder */
-  .product-card img {
+  /* .product-card img {
     width: 100%;
     height: auto;
-  }
+  } */
 
   /* text color */
-  .grey{
+  /* .grey{
     color: lightslategray;
   }
   .products a{
     color: black;
-  }
+  } */
 
   /* SALE RED */
-  .sale{
+  /* .sale{
     display: flex;
     justify-content: space-between;
     padding-right: 20px;
@@ -65,11 +65,11 @@ transform: scaleX(-1)translateX(-0.2rem);}
   .saleRed{
     background-color: red;
     
-  }
+  } */
 
 
   /* SOLD OUT IMG */
-  .sold-out_container img{
+  /* .sold-out_container img{
     filter: opacity(50%)
   }
   .sold-out{
@@ -84,10 +84,10 @@ transform: scaleX(-1)translateX(-0.2rem);}
   .sold-out_container{
     position: relative;
     text-align: center;
-  }
+  } */
 
 /* PRODUCT PAGE */
-.breadcrumbs a{
+/* .breadcrumbs a{
     color: black;
 }
 .info-right{
@@ -117,5 +117,145 @@ transform: scaleX(-1)translateX(-0.2rem);}
     text-align: center;
     max-width: 400px;
     width: 100%;
-}
+} */
 
+/* Header */
+header {
+    display: flex;
+    justify-content: right;
+  }
+  
+  nav a {
+    color: black;
+  }
+  
+  /* H1 */
+  .red {
+    color: red;
+    display: inline-block;
+    transform: scaleX(-1) translateX(-0.2rem);
+  }
+  
+  /* grid box categories */
+  .categoriesGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    
+  }
+  
+  /* categorie-box */
+  .category-box {
+    background-color: grey;
+    color: white;
+    padding: 30px;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  
+  /* Produktgrid */
+  .products {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 20px;
+  }
+  
+  /* Produktkort */
+  .product-card {
+    display: grid;
+    grid-template-rows: auto auto auto auto auto;
+    gap: 8px;
+    position: relative; /* til badges */
+    background: #fff;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  /* Billeder */
+  .product-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 4px;
+  }
+  
+  /* text color */
+  .grey {
+    color: lightslategray;
+  }
+  
+  .products a {
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  
+  /* SALE */
+  .sale {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .sale-red {
+    background-color: red;
+    color: white;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-weight: bold;
+  }
+  
+  /* SOLD OUT badge */
+  .sold-out {
+    background-color: grey;
+    color: white;
+    padding: 6px 10px;
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    font-weight: 600;
+    border-radius: 4px;
+    opacity: 0.9;
+  }
+  
+  /* SOLD OUT image effect */
+  .sold-out_container img {
+    filter: opacity(50%);
+  }
+  
+  /* PRODUCT PAGE */
+  .breadcrumbs a {
+    color: black;
+  }
+  
+  .info-right {
+    background-color: #d8d8d8;
+    color: white;
+    padding: 20px;
+    font-size: x-large;
+  }
+  
+  .info-left {
+    font-size: x-large;
+  }
+  
+  .product-info {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+  }
+  
+  .info-right,
+  .info-left {
+    flex: 1;
+  }
+  
+  .product-img {
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+  }
